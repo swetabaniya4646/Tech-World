@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tech World</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body{
+        background-color: rgb(241, 240, 240);
+        scroll-behavior: smooth;
+    }
+
+    .navbar{
+      background-color:rgb(243, 241, 241);
+      box-shadow:2px 2px 2px rgb(192, 190, 190);
+    }
+    .navbar-brand{
+      font-weight: 500;
+      font-size:35px;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      transition: 0.3s;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    .btn:hover {
+      opacity: 0.8;
+      transform: scale(1.05);
+    }
+
+    .nav-link:hover {
+      color: yellow !important;
+    }
+
+    section {
+      padding: 60px 0;
+    }
+
+   .bg-light ul li:hover {
+      color: blue;
+      cursor: pointer;
+    }
+ *{
+   transition: all 0.3s ease;
+ }
+
+ .navbar{
+   position: sticky;
+   top: 0;
+   z-index: 1000;
+ }
+
+ .navbar-brand{
+   color: #0d6efd !important;
+   letter-spacing: 1px;
+ }
+
+ .nav-link{
+   font-weight: 500;
+   margin-left: 10px;
+ }
+
+ .nav-link:hover{
+   background-color: #0d6efd;
+   border-radius: 5px;
+   padding: 8px 12px;
+   color: white !important;
+ }
+
+ h2{
+   font-weight: bold;
+   margin-bottom: 20px;
+   position: relative;
+ }
+
+ h2::after{
+   content: "";
+   width: 80px;
+   height: 4px;
+   background: #0d6efd;
+   display: block;
+   margin: 10px auto;
+   border-radius: 5px;
+ }
+
+ .card{
+   border: none;
+   border-radius: 15px;
+   overflow: hidden;
+   background: white;
+ }
+
+ .card-body{
+   padding: 25px;
+ }
+
+ .card-title{
+   font-weight: bold;
+   color: #0d6efd;
+ }
+
+ .btn{
+   border-radius: 30px;
+   padding: 10px 20px;
+   font-weight: 500;
+ }
+
+ .bg-light{
+   border-radius: 15px;
+   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+ }
+
+ .bg-light ul{
+   list-style: none;
+   padding-left: 0;
+ }
+
+ .bg-light ul li{
+   padding: 10px 0;
+   border-bottom: 1px solid #ddd;
+ }
+
+ .bg-light ul li:last-child{
+   border-bottom: none;
+ }
+
+ .bg-light ul li a{
+   text-decoration: none;
+   color: black;
+   font-weight: 500;
+ }
+
+ .bg-light ul li a:hover{
+   color: #0d6efd;
+   padding-left: 5px;
+ }
+
+ #about p{
+   font-size: 17px;
+   line-height: 1.8;
+   color: #555;
+ }
+
+ #services .card{
+   height: 100%;
+   background: linear-gradient(145deg, #ffffff, #f1f1f1);
+ }
+
+ #services .card:hover{
+   background: #0d6efd;
+   color: white;
+ }
+
+ #services .card:hover .card-title,
+ #services .card:hover h5{
+   color: white;
+ }
+
+ form{
+   max-width: 600px;
+   margin: auto;
+ }
+
+ .form-control{
+   border-radius: 10px;
+   padding: 12px;
+   border: 1px solid #ccc;
+ }
+
+ .form-control:focus{
+   box-shadow: 0 0 10px rgba(13,110,253,0.3);
+   border-color: #0d6efd;
+ }
+
+ footer{
+   font-size: 15px;
+   letter-spacing: 1px;
+ }
+
+ .card:hover{
+   transform: translateY(-8px) scale(1.02);
+ }
+
+ body{
+   animation: fadeIn 1s ease-in;
+ }
+
+ @keyframes fadeIn{
+   from{
+     opacity: 0;
+   }
+   to{
+     opacity: 1;
+   }
+ }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="#">TechWorld</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+<div class="container mt-4">
+  <div class="row">
+
+    <div class="col-md-8">
+
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Latest Gadgets</h5>
+          <p class="card-text">Discover the newest smartphones, laptops and smart devices.</p>
+          <a href="https://www.bestproducts.com/tech/g864/cool-tech-products-you-need/" class="btn btn-primary">View More</a>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Tech News</h5>
+          <p class="card-text">Stay updated with the latest technology trends.</p>
+          <a href="https://www.reuters.com/technology/" class="btn btn-success">Read News</a>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Product Reviews</h5>
+          <p class="card-text">Check honest reviews before buying tech products.</p>
+          <a href="https://www.productreview.com.au/" class="btn btn-danger">See Reviews</a>
+        </div>
+      </div>
+
+    </div> 
+
+    <div class="col-md-4">
+      <div class="bg-light p-3">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="https://www.gadgets360.com/">Gadgets</a> </li>
+          <li><a href="https://www.gadgetbytenepal.com/category/mobile-price-in-nepal/">Smartphones</a> </li>
+          <li><a href="https://www.nytimes.com/wirecutter/reviews/best-laptops/">Best Laptops</a></li>
+          <li><a href="https://www.ibm.com/think/insights/artificial-intelligence-future">AI & Future Tech</a></li>
+          <li><a href="https://www.nytimes.com/wirecutter/reviews/best-game-consoles/">Gaming Devices</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="bg-white">
+  <div class="container text-center">
+    <h2>About Us</h2>
+    <p class="mt-3">
+      TechWorld is your go-to platform for the latest updates in technology.
+      We provide trusted reviews, trending news, and insights into future innovations.
+      TechWorld is a modern technology platform dedicated to bringing users
+      the latest updates from the world of innovation and digital trends.
+      Our mission is to make technology simple, informative, and accessible
+      for everyone.
+    </p>
+    <p class="mt-3">
+       We cover a wide range of topics including smartphones, laptops,
+      gaming devices, artificial intelligence, gadgets, and future
+      technologies. Our team researches and shares trusted product reviews,
+      daily tech news, and useful buying guides to help users make smart
+      decisions.
+    </p>
+    <p class="mt-3">
+       At TechWorld, we believe technology shapes the future. That’s why
+      we continuously explore new innovations and provide quality content
+      that keeps our visitors informed, inspired, and connected with the
+      fast-changing digital world.
+    </p>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container text-center">
+    <h2>Our Services</h2>
+    <div class="row mt-4">
+
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h5>Gadget Reviews</h5>
+          <p>In-depth analysis of latest tech products.We provide detailed reviews of smartphones, laptops,
+            smartwatches, gaming devices, and other modern gadgets
+            to help users choose the best products.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h5>Tech News</h5>
+          <p>Daily updates on global technology trends.Stay updated with daily technology news, trending innovations,
+            AI developments, software updates, and global digital trends.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h5>Consulting</h5>
+          <p>Helping you choose the right tech solutions. We help individuals and businesses choose the right
+            technology solutions, devices, and digital tools
+            according to their needs.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="bg-white">
+  <div class="container text-center">
+    <h2>Contact Us</h2>
+
+    <form class="mt-4">
+      <div class="mb-3">
+        <input type="text" class="form-control" placeholder="Your Name" required>
+      </div>
+
+      <div class="mb-3">
+        <input type="email" class="form-control" placeholder="Your Email" required>
+      </div>
+
+      <div class="mb-3">
+        <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+      </div>
+
+      <button class="btn btn-primary">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center p-3">
+  © 2026 TechWorld
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
